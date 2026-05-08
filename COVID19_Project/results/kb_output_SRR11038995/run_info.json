@@ -1,0 +1,14 @@
+{
+	"n_targets": 227665,
+	"n_bootstraps": 0,
+	"n_processed": 2995244,
+	"n_pseudoaligned": 2047526,
+	"n_unique": 333963,
+	"p_pseudoaligned": 68.4,
+	"p_unique": 11.1,
+	"kallisto_version": "0.51.1",
+	"index_version": 13,
+	"k-mer length": 31,
+	"start_time": "Thu May  7 09:54:22 2026",
+	"call": "/usr/local/lib/python3.12/dist-packages/kb_python/bins/linux/kallisto/kallisto bus -i /content/drive/MyDrive/COVID19_Project/reference/human_index.idx -o /content/drive/MyDrive/COVID19_Project/results/kb_output_SRR11038995 -x 10xv2 -t 2 /content/SRR11038995/SRR11038995_1.fastq.gz /content/SRR11038995/SRR11038995_2.fastq.gz"
+}

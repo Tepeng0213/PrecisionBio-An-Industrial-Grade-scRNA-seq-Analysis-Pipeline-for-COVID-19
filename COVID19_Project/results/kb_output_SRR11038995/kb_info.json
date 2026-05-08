@@ -1,0 +1,30 @@
+{
+    "workdir": "/content",
+    "version": "0.29.5",
+    "kallisto": {
+        "path": "/usr/local/lib/python3.12/dist-packages/kb_python/bins/linux/kallisto/kallisto",
+        "version": "0.51.1"
+    },
+    "bustools": {
+        "path": "/usr/local/lib/python3.12/dist-packages/kb_python/bins/linux/bustools/bustools",
+        "version": "0.45.1"
+    },
+    "start_time": "2026-05-07T10:11:10.686615",
+    "end_time": "2026-05-07T10:11:39.638426",
+    "elapsed": 28.951811,
+    "call": "/usr/local/bin/kb count -i /content/drive/MyDrive/COVID19_Project/reference/human_index.idx -g /content/drive/MyDrive/COVID19_Project/reference/t2g.txt -x 10xv2 -o /content/drive/MyDrive/COVID19_Project/results/kb_output_SRR11038995 --h5ad --workflow standard -t 2 --verbose /content/SRR11038995/SRR11038995_1.fastq.gz /content/SRR11038995/SRR11038995_2.fastq.gz",
+    "commands": [
+        "bustools sort -o /content/drive/MyDrive/COVID19_Project/results/kb_output_SRR11038995/tmp/output.s.bus -T /content/drive/MyDrive/COVID19_Project/results/kb_output_SRR11038995/tmp -t 2 -m 2G /content/drive/MyDrive/COVID19_Project/results/kb_output_SRR11038995/output.bus",
+        "bustools inspect -o /content/drive/MyDrive/COVID19_Project/results/kb_output_SRR11038995/inspect.json -w /content/drive/MyDrive/COVID19_Project/results/kb_output_SRR11038995/10x_version2_whitelist.txt /content/drive/MyDrive/COVID19_Project/results/kb_output_SRR11038995/tmp/output.s.bus",
+        "bustools correct -o /content/drive/MyDrive/COVID19_Project/results/kb_output_SRR11038995/tmp/output.s.c.bus -w /content/drive/MyDrive/COVID19_Project/results/kb_output_SRR11038995/10x_version2_whitelist.txt /content/drive/MyDrive/COVID19_Project/results/kb_output_SRR11038995/tmp/output.s.bus",
+        "bustools sort -o /content/drive/MyDrive/COVID19_Project/results/kb_output_SRR11038995/output.unfiltered.bus -T /content/drive/MyDrive/COVID19_Project/results/kb_output_SRR11038995/tmp -t 2 -m 2G /content/drive/MyDrive/COVID19_Project/results/kb_output_SRR11038995/tmp/output.s.c.bus",
+        "bustools count -o /content/drive/MyDrive/COVID19_Project/results/kb_output_SRR11038995/counts_unfiltered/cells_x_genes -g /content/drive/MyDrive/COVID19_Project/reference/t2g.txt -e /content/drive/MyDrive/COVID19_Project/results/kb_output_SRR11038995/matrix.ec -t /content/drive/MyDrive/COVID19_Project/results/kb_output_SRR11038995/transcripts.txt --genecounts --umi-gene /content/drive/MyDrive/COVID19_Project/results/kb_output_SRR11038995/output.unfiltered.bus"
+    ],
+    "runtimes": [
+        8.932294368743896,
+        2.5137431621551514,
+        3.60705304145813,
+        3.8110992908477783,
+        5.015339374542236
+    ]
+}
