@@ -132,20 +132,20 @@ This module represents the critical "Precision Audit Phase" of the data analysis
 ## 2. Core Functional Summary
 * **Empty Droplet Filtration & Knee Plot (Step 3.1)**: Uses log-log transformation of UMI abundance rankings to intuitively distinguish real cells from ambient RNA noise.
 
-<a href="./COVID_Project/results/figures/step3.1_knee_plot_SRR11038995.png">
-  <img src="./COVID_Project/results/figures/step3.1_knee_plot_SRR11038995.png" width="400" alt="Knee Plot">
+<a href="./COVID19_Project/results/figures/step3.1_knee_plot_SRR11038995.png">
+  <img src="./COVID19_Project/results/figures/step3.1_knee_plot_SRR11038995.png" width="400" alt="Knee Plot">
 </a>
 
 * **Multi-Dimensional Alignment Efficiency Analysis (Step 3.2.1 - 3.2.2)**: Parses alignment metadata to quantify the ratio of valid sequences via stacked bar charts, evaluating the overall quality of library construction.
 
-<a href="./COVID_Project/results/figures/step3.2_mapping_efficiency_SRR11038995.png">
-  <img src="./COVID_Project/results/figures/step3.2_mapping_efficiency_SRR11038995.png" width="400" alt="Mapping Efficiency">
+<a href="./COVID19_Project/results/figures/step3.2_mapping_efficiency_SRR11038995.png">
+  <img src="./COVID19_Project/results/figures/step3.2_mapping_efficiency_SRR11038995.png" width="400" alt="Mapping Efficiency">
 </a>
 
 * **Gene Identifier Remapping (Step 3.3.1 - 3.3.2)**: Converts abstract ENSG IDs into intuitive Gene Symbols, enabling the precise identification of mitochondrial genes (MT-).
 
-<a href="./COVID_Project/results/figures/step3.3.3_qc_audit_fixed_SRR11038995.png">
-  <img src="./COVID_Project/results/figures/step3.3.3_qc_audit_fixed_SRR11038995.png" width="400" alt="QC Audit Fixed">
+<a href="./COVID19_Project/results/figures/step3.3.3_qc_audit_fixed_SRR11038995.png">
+  <img src="./COVID19_Project/results/figures/step3.3.3_qc_audit_fixed_SRR11038995.png" width="400" alt="QC Audit Fixed">
 </a>
 
 * **Cell-Level Metric Re-Audit (Step 3.3.3)**: Synthesizes UMI counts, detected gene counts, and mitochondrial percentages to generate and archive "restored" high-resolution QC distribution plots.
